@@ -8,14 +8,12 @@
 
 ### В результате тестирования выявлены следующие дефекты:
 
-- при вводе в приложение Credit Card Number Validator номеров карт состоящих из 14  цифр, приложение выдает сообщенте FAIL;
-- при вводе в приложение Credit Card Number Validator номеров карт состоящих из 19  цифр, приложение выдает сообщенте FAIL;
+- при вводе в приложение Credit Card Number Validator номеров карт состоящих из более 16 цифр или менее, приложение выдает сообщенте FAIL [bug report](https://github.com/AlexPahomov/javalesson1task2/issues/1);
+
 
 ### Описание процесса тестирования
 
-- Запустить проект Credit Card Number Validator В среде IntelliJ IDEA Community:
-
-- вставить код
+- вставить код в среде IntelliJ IDEA Community:
 ```
 public class Main {
   public static void main(String[] args) {
@@ -56,7 +54,7 @@ public class Main {
 }
 ```
 
-- В 4-ой строке проекта String number = "<вствить номер карты>" вставляем номера карт взятые [отсюда](https://www.freeformatter.com/credit-card-number-generator-validator.html);
+- В 4-ой строке проекта String number = "<вствить номер карты>" вставить номера карт взятые [отсюда](https://www.freeformatter.com/credit-card-number-generator-validator.html);
 
 - Запустить программу;
 
